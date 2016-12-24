@@ -1,0 +1,508 @@
+{
+	"AppBar": {
+		"prefix": "AppBar",
+		"body": [
+			"<AppBar",
+			"	title=\"$1\"",
+			"	iconClassNameRight=\"$2\"",
+			"/>"
+		]
+	},
+	"AutoComplete": {
+		"prefix": "AutoComplete",
+		"body": [
+			"<AutoComplete",
+			"	hintText=\"$1\"",
+			"	dataSource={${2:this.state.dataSource}}",
+			"	onUpdateInput={${3:this.handleUpdateInput.bind(this)}}",
+			"	floatingLabelText=\"$4\"",
+			"	fullWidth={${5:false}}",
+			"/>"
+		]
+	},
+	"IconAvatar": {
+		"prefix": "IconAvatar",
+		"body": [
+			"<Avatar",
+			"	icon={<FileFolder />}",
+			"	color={orange200}",
+			"	backgroundColor={pink400}",
+			"	size={30}",
+			"	style={style}",
+			"/>"
+		]
+	},
+	"LetterAvatar": {
+		"prefix": "LetterAvatar",
+		"body": [
+			"<Avatar",
+			"	color={deepOrange300}",
+			"	backgroundColor={purple500}",
+			"	size={30}",
+			"	style={style}>",
+			"	${0:A}",
+			"</Avatar>"
+		]
+	},
+	"Badge": {
+		"prefix": "Badge",
+		"body": [
+			"<Badge",
+			"	badgeContent={$1}",
+			"	primary={${2:true}}>",
+			"	$0",
+			"</Badge>"
+		]
+	},
+	"BottomNavigationGroup": {
+		"prefix": "BottomNavigationGroup",
+		"body": [
+			"<BottomNavigation selectedIndex={this.state.${1:selectedIndex}}>",
+			"	$0",
+			"</BottomNavigation>"
+		]
+	},
+	"BottomNavigationItem": {
+		"prefix": "BottomNavigationItem",
+		"body": [
+			"<BottomNavigationItem",
+			"	label=\"${1:Label}\"",
+			"	icon={${2}}",
+			"	onTouchTap={() => this.setState({ selectedIndex: ${1:0} })} />"
+		]
+	},
+	"FlatButton": {
+		"prefix": "FlatButton",
+		"body": [
+			"<FlatButton",
+			"	primary={${1:true}}",
+			"	label=\"${2:Label}\"",
+			"	icon={${2}}",
+			"	onTouchTap={this.${3:handleTouch}.bind(this)} />"
+		]
+	},
+	"RaisedButton": {
+		"prefix": "RaisedButton",
+		"body": [
+			"<RaisedButton",
+			"	primary={${1:true}}",
+			"	label=\"${2:Label}\"",
+			"	icon={${2:icon}}",
+			"	onTouchTap={this.${3:handleTouch}.bind(this)} />"
+		]
+	},
+	"FloatingActionButton": {
+		"prefix": "FloatingActionButton",
+		"body": [
+			"<FloatingActionButton style={${1:style}}>",
+			"	<${0:ContentAdd} />",
+			"</FloatingActionButton>"
+		]
+	},
+	"IconButton": {
+		"prefix": "IconButton",
+		"body": [
+			"<IconButton",
+			"	tooltip=\"$1\"",
+			"	onTouchTap={this.${2:handleTouch}.bind(this)>",
+			"	<${0:ActionGrade} />",
+			"</IconButton>"
+		]
+	},
+	"IconButtonClassName": {
+		"prefix": "IconButtonClassName",
+		"body": "<IconButton iconClassName=\"$1\" />"
+	},
+	"IconButtonFontIcon": {
+		"prefix": "IconButtonFontIcon",
+		"body": [
+			"<IconButton tooltip=\"Font Icon\">",
+			"	<FontIcon className=\"$1\" />",
+			"</IconButton>"
+		]
+	},
+	"Card": {
+		"prefix": "Card",
+		"body": [
+			"<Card>",
+			"	$0",
+			"</Card>"
+		]
+	},
+	"CardTitle": {
+		"prefix": "CardTitle",
+		"body": [
+			"<CardTitle title=\"$1\" subtitle=\"$2\" />"
+		]
+	},
+	"CardHeader": {
+		"prefix": "CardHeader",
+		"body": [
+			"<CardHeader",
+			"	title=\"$1\"",
+			"	subtitle=\"$2\"",
+			"	avatar=\"$3\"",
+			"/>"
+		]
+	},
+	"CardMedia": {
+		"prefix": "CardMedia",
+		"body": [
+			"<CardMedia overlay={",
+			"	<CardTitle title=\"Overlay title\" subtitle=\"Overlay subtitle\" />",
+			"} />"
+		]
+	},
+	"CardText": {
+		"prefix": "CardText",
+		"body": [
+			"<CardText>",
+			"	$0",
+			"</CardText>"
+		]
+	},
+	"CardActions": {
+		"prefix": "CardActions",
+		"body": [
+			"<CardActions>",
+			"	<FlatButton label=\"Action1\" />",
+			"	<FlatButton label=\"Action2\" />",
+			"</CardActions>"
+		]
+	},
+	"Chip": {
+		"prefix": "Chip",
+		"body": [
+			"<Chip",
+			"	onTouchTap={this.${1:hadnleTouch}.bind(this)}>",
+			"	${3:icon}",
+			"	${0:Awesome material-ui}",
+			"</Chip>"
+		]
+	},
+	"DatePicker": {
+		"prefix": "DatePicker",
+		"body": [
+			"<DatePicker",
+			"	autoOk={${1:true}}",
+			"	minDate={this.state.${2:minDate}}",
+			"	maxDate={this.state.${3:maxDate}}",
+			"	defaultDate={this.state.${4:defaultDate}}",
+			"	disableYearSelection={${5:false}}",
+			"	locale=\"$6\"",
+			"	value={this.state.${7:date}}",
+			"	onChange={(e, ${7:date}) => this.setState({ ${7:date} })} />"
+		]
+	},
+	"Dialog": {
+		"prefix": "Dialog",
+		"body": [
+			"<Dialog",
+			"	title=\"${1:Dialog title}\"",
+			"	actions={${6:actions}}",
+			"	modal={${3:true}}",
+			"	open={this.state.${4:showDialog}}",
+			"	onRequestClose={() => this.setState({ ${4:showDialog}: false })}",
+			"	autoScrollBodyContent={${5:false}}>",
+			"	$0",
+			"</Dialog>"
+		]
+	},
+	"Divider": {
+		"prefix": "Divider",
+		"body": [
+			"<Dialog inset={${1:false}} />"
+		]
+	},
+	"Drawer": {
+		"prefix": "Drawer",
+		"body": [
+			"<Drawer",
+			"	docked={${1:false}}",
+			"	width={${2:256}}",
+			"	open={this.state.${3:open}}",
+			"	onRequestChange={${3:open} => this.setState({ ${3:open} })}>",
+			"</Drawer>"
+		]
+	},
+	"GridList": {
+		"prefix": "GridList",
+		"body": [
+			"<GridList",
+			"	cols={${1:2}}",
+			"	cellHeight={${2:200}}",
+			"	padding={${3:1}}>",
+			"	$0",
+			"</GridList>"
+		]
+	},
+	"GridTile": {
+		"prefix": "GridTile",
+		"body": [
+			"<GridTile",
+			"	key={$1}",
+			"	title={$2}",
+			"	actionIcon={$3}",
+			"	actionPosition=\"$4\"",
+			"	titlePosition=\"$5\"",
+			"	titleBackground=\"linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)\"",
+			"	cols={$6}",
+			"	rows={$7}>",
+			"	$0",
+			"</GridTile>"
+		]
+	},
+	"FontIcon": {
+		"prefix": "FontIcon",
+		"body": [
+			"<FontIcon",
+			"	className=\"${1:muidocs-icon-action-home}\"",
+			"	style={${2:iconStyles}}",
+			"	color={${3:red500}}",
+			"	hoverColor={${4:greenA200}} />"
+		]
+	},
+	"SvgIcon": {
+		"prefix": "SvgIcon",
+		"body": [
+			"<SvgIcon {...props}>",
+			"	<path d=\"${1:M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z}\" />",
+			"</SvgIcon>"
+		]
+	},
+	"MaterialIcon": {
+		"prefix": "MaterialIcon",
+		"body": [
+			"<HomeIcon color={${1:blue500}} />"
+		]
+	},
+	"List": {
+		"prefix": "List",
+		"body": [
+			"<List>",
+			"	$0",
+			"</List>"
+		]
+	},
+	"ListItem": {
+		"prefix": "ListItem",
+		"body": [
+			"<ListItem",
+			"	primaryText=\"${1:Inbox}\"",
+			"	secondaryText=\"${2:Secondary text}\"",
+			"	leftIcon={<${3:ContentInbox} />} />"
+		]
+	},
+	"Menu": {
+		"prefix": "Menu",
+		"body": [
+			"<Menu desktop={${1:true}} width={${2:256}}>",
+			"	$0",
+			"</Menu>"
+		]
+	},
+	"MenuItem": {
+		"prefix": "MenuItem",
+		"body": [
+			"<MenuItem primarText=\"$1\" secondaryText=\"$2\" />"
+		]
+	},
+	"DropDownMenu": {
+		"prefix": "DropDownMenu",
+		"body": [
+			"<DropDownMenu",
+			"	autoWidth={${1:true}}",
+			"	value={this.state.${2:value}}",
+			"	onChange={(e, i, ${2:value}) => this.setState({ ${2: value} }) } />"
+		]
+	},
+	"Paper": {
+		"prefix": "Paper",
+		"body": [
+			"<Paper zDepth={${1:1}} rounded={${2:true}} circle={${3:false}} />"
+		]
+	},
+	"Popover": {
+		"prefix": "Popover",
+		"body": [
+			"<Popover",
+			"	open={this.state.${1:open}}",
+			"	anchorEl={this.state.${2:anchorEl}}",
+			"	anchorOrigin={{ horizontal: 'left', vertical: 'bottom' }}",
+			"	targetOrigin={{ horizontal: 'left', vertical: 'top' }}",
+			"	onRequestClose={() => this.setState({ ${1:open}: false })}>",
+			"	$0",
+			"</Popover>"
+		]
+	},
+	"CircularProgress": {
+		"prefix": "CircularProgress",
+		"body": [
+			"<CircularProgress",
+			"	mode=\"${1:determinate}\"",
+			"	value={this.state.${2:completed}}",
+			"	size={${3:60}}",
+			"	thickness={${4:7}} />"
+		]
+	},
+	"LinearProgress": {
+		"prefix": "LinearProgress",
+		"body": [
+			"<LinearProgress mode=\"${1:determinate}\" value={this.state.${2:completed}} />"
+		]
+	},
+	"RefreshIndicator": {
+		"prefix": "RefreshIndicator",
+		"body": [
+			"<RefreshIndicator",
+			"	size={${1:50}}",
+			"	left={${2:70}}",
+			"	top=${3:{0}}",
+			"	loadingColor=\"${4:#FF9800}\"",
+			"	status=\"${5:loading}\" />"
+		]
+	},
+	"SelectField": {
+		"prefix": "SelectField",
+		"body": [
+			"<SelectField",
+			"	value={this.state.${1:value}}",
+			"	floatingLabelText=\"${2:Floating Label Text}\"",
+			"	floatingLabelFixed={${3:true}}",
+			"	hintText=\"${4:Hint text}\"",
+			"	onChange={(e, i, ${1:value}) => this.setState({ ${1:value} })}",
+			"	maxHeight={${5:200}}>",
+			"	$0",
+			"</SelectField>"
+		]
+	},
+	"Slider": {
+		"prefix": "Slider",
+		"body": [
+			"<Slider",
+			"	min={${1:0}}",
+			"	max={${2:100}}",
+			"	step={${3:1}}",
+			"	defaultValue={${4:50}}",
+			"	value={this.state.${5:secondSlider}}",
+			"	onChange={(e, ${5:secondSlider}) => this.setState({ ${5:secondSlider} } )} />"
+		]
+	},
+	"Checkbox": {
+		"prefix": "Checkbox",
+		"body": [
+			"<Checkbox",
+			"	checked={this.state.${1:checked}}",
+			"	checkedIcon={<${2:ActionFavorite} />}",
+			"	uncheckedIcon={<${3:ActionFavoriteBorder} />}",
+			"	label=\"${4:Checkbox label}\"",
+			"	onCheck={(e, ${1:checked}) => this.setState({ ${1:checked} })}/>"
+		]
+	},
+	"RadioButtonGroup": {
+		"prefix": "RadioButtonGroup",
+		"body": [
+			"<RadioButtonGroup name=\"${1:name}\" defaultSelected={this.state.${1:name}}>",
+			"	$0",
+			"</RadioButtonGroup>"
+		]
+	},
+	"RadioButton": {
+		"prefix": "RadioButton",
+		"body": [
+			"<RadioButton",
+			"	value={$1}",
+			"	label={$2}",
+			"	checkedIcon={$3}",
+			"	uncheckedIcon={$3} />"
+		]
+	},
+	"Toggle": {
+		"prefix": "Toggle",
+		"body": [
+			"<Toggle",
+			"	label=\"$1\"",
+			"	thumbStyle={$2}",
+			"	trackStyle={$3}",
+			"	thumbSwitchedStyle={$3}",
+			"	trackSwitchedStyle={$4}",
+			"	labelStyle={$5} />"
+		]
+	},
+	"Snackbar": {
+		"prefix": "Snackbar",
+		"body": [
+			"<Snackbar",
+			"	open={this.state.${1:open}}",
+			"	message={this.state.${2:message}}",
+			"	autoHideDuration={${3:4000}}",
+			"	onRequestClose={() => this.setState({ ${1:open}: false })} />"
+		]
+	},
+	"Subheader": {
+		"prefix": "Subheader",
+		"body": [
+			"<Subheader inset={${1:false}>$2</Subheader>"
+		]
+	},
+	"Table": {
+		"prefix": "Table",
+		"body": [
+			"<Table>",
+			"	$0",
+			"</Table>"
+		]
+	},
+	"TableHeader": {
+		"prefix": "TableHeader",
+		"body": [
+			"<TableHeader>",
+			"	<TableRow>",
+			"		<TableHeaderColumn>$0</TableHeaderColumn>",
+			"	</TableRow>",
+			"</TableRow>"
+		]
+	},
+	"TableBody": {
+		"prefix": "TableBody",
+		"body": [
+			"<TableBody>",
+			"	<TableRow>",
+			"		<TableRowColumn>$0</TableRowColumn>",
+			"	</TableRow>",
+			"</TableBody>"
+		]
+	},
+	"Tabs": {
+		"prefix": "Tabs",
+		"body": [
+			"<Tabs>",
+			"	<Tab label=\"$1\" onActive={$2}>",
+			"		$0",
+			"	</Tab>",
+			"</Tabs>"
+		]
+	},
+	"TextField": {
+		"prefix": "TextField",
+		"body": [
+			"<TextField",
+			"	hintText=\"$1\"",
+			"	errorText=\"$2\"",
+			"	floatingLabelText=\"$3\"",
+			"	multiLine={${4:false}}",
+			"	rows={${5:1}} />"
+		]
+	},
+	"TimePicker": {
+		"prefix": "TimePicker",
+		"body": [
+			"<TimePicker",
+			"	format=\"24hr\"",
+			"	disabled={${1:false}}",
+			"	value={this.state.${2:time}}",
+			"	onChange={(e, ${2:time}) => this.setState({ ${2:time} })}",
+			"	hintText=\"Time picker\" />"
+		]
+	}
+}

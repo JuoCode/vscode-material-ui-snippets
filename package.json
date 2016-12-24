@@ -1,0 +1,30 @@
+{
+  "name": "vscode-material-ui-snippets",
+  "publisher": "Sword",
+  "description": "Visual Studio Code snippets for material-ui",
+  "version": "1.0.0",
+  "engines": { "vscode": "^1.5.0" },
+  "categories": ["Snippets"], 
+  "icon": "logo.png",
+  "keywords": [
+    "material",
+    "react",
+    "snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "jsx",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}
