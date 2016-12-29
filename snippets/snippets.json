@@ -211,7 +211,7 @@
 	"Divider": {
 		"prefix": "Divider",
 		"body": [
-			"<Dialog inset={${1:false}} />"
+			"<Divider />"
 		]
 	},
 	"Drawer": {
